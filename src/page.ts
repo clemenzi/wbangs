@@ -2,7 +2,7 @@ import "@picocss/pico/css/pico.min.css";
 
 export function render() {
   document.body.innerHTML = `
-    <main class="container">
+    <main class="container" style="display: flex; flex-direction: column; justify-content: center; height: 100vh;">
       <h1>WBangs</h1>
       <p>
         WBangs is a dead simple search redirector that uses <a href="https://duckduckgo.com/bangs" target="_blank" rel="noopener noreferrer">DuckDuckGo Bangs</a> syntax to redirect your searches to different search engines and websites.
