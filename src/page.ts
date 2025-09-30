@@ -25,7 +25,7 @@ export function render() {
       <hr />
       <footer>
         <p>
-          <a href="/bangs.txt" target="_blank" rel="noopener noreferrer">List of supported bangs</a>
+          <a href="/bangs.json" target="_blank" rel="noopener noreferrer">List of supported bangs</a>
           <br />
           Made with ❤️ by <a href="https://vcz.me" target="_blank" rel="noopener noreferrer">vcz</a>
         </p>
