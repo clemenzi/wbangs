@@ -34,7 +34,7 @@ pnpm run preview
 
 This will start a local server at `http://localhost:4173`.
 
-## Adding custom bangs
+### Adding custom bangs
 
 To add custom bangs you can modify the `scripts/generate-bangs.ts` file. The file is well documented and should be easy to understand. The basic structure is as follows:
 
