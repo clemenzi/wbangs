@@ -15,7 +15,7 @@ export function parse(hash: string): QueryHash {
   const bangMatch = query.match(/(^|\s)(!\S+)(\s|$)/);
   const bang = bangMatch
     ? bangMatch[2]
-    : localStorage.getItem("defaultBang") || "!g";
+    : params.get("d") || localStorage.getItem("defaultBang") || "!g";
 
   const cleanedQuery = query.replace(bang || "", "").trim();
 
