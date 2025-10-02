@@ -9,6 +9,7 @@ export default defineConfig({
     }),
     {
       name: "bangs-list-generator",
+      apply: "build",
       buildStart() {
         this.emitFile({
           type: "asset",
