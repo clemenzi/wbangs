@@ -8,7 +8,7 @@ import { render } from "./page";
   if (!hash) return render();
 
   const { bang, query } = parse(hash);
-  const url = bangs[bang.replace("!", "")];
+  const url = bangs[bang];
 
   window.location.replace(url.replace("{{{s}}}", encodeURIComponent(query)));
 })();

@@ -13,10 +13,10 @@ import fs from "fs/promises";
   const bangs = Object.fromEntries(
     [...data, ...customBang].map(({ t, u }) => {
       if (customBang.find((b) => b.t === t)) {
-        return [t, customBang.find((b) => b.t === t)!.u];
+        return [`!${t}`, customBang.find((b) => b.t === t)!.u];
       }
 
-      return [t, u];
+      return [`!${t}`, u];
     })
   );
 
